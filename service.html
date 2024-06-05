@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Главная</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    .img-icons {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-image {
+      max-width: 332px;
+    }
+
+    .img {
+      width: 100%;
+
+    }
+
+    @media(min-width:1000px) {
+      .btn-contact-uss {
+        margin-left: 50px;
+      }
+    }
+
+    @media(max-width:1000px) {
+      .btn-contact-uss {
+        margin-left: 0px;
+      }
+    }
+
+
+    .feature-box-1 {
+      padding: 32px;
+      box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+      margin: 15px 0;
+      position: relative;
+      z-index: 1;
+      border-radius: 10px;
+      overflow: hidden;
+      -moz-transition: ease all 0.35s;
+      -o-transition: ease all 0.35s;
+      -webkit-transition: ease all 0.35s;
+      transition: ease all 0.35s;
+      top: 0;
+    }
+
+    .feature-box-1 * {
+      -moz-transition: ease all 0.35s;
+      -o-transition: ease all 0.35s;
+      -webkit-transition: ease all 0.35s;
+      transition: ease all 0.35s;
+    }
+
+    .feature-box-1 .icon {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      background: #1998ff;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 50%;
+      margin-bottom: 22px;
+      font-size: 27px;
+    }
+
+    .feature-box-1 .icon i {
+      line-height: 70px;
+    }
+
+    .feature-box-1 h5 {
+      font-weight: 600;
+    }
+
+    .feature-box-1 p {
+      margin: 0;
+    }
+
+    .feature-box-1:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: 0;
+      border-radius: 10px;
+      width: 0;
+      background: #20247b;
+      z-index: -1;
+      -moz-transition: ease all 0.35s;
+      -o-transition: ease all 0.35s;
+      -webkit-transition: ease all 0.35s;
+      transition: ease all 0.35s;
+    }
+
+    .feature-box-1:hover {
+      top: -5px;
+    }
+
+    .feature-box-1:hover h5 {
+      color: #ffffff;
+    }
+
+    .feature-box-1:hover p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .feature-box-1:hover:after {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      left: 0;
+      right: auto;
+    }
+
+    .section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .section-title {
+      padding-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-weight: 700;
+      font-size: 45px;
+      margin: 0 0 15px;
+      border-left: 5px solid #1998ff;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <header id="header-section">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+      <div class="container">
+        <div class="navbar-brand-wrapper d-flex w-100">
+          <h1><a href="index.html" style="text-decoration: none; color: black;">ACCENTOS</a></h1>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="mdi mdi-menu navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+            <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
+              <div class="navbar-collapse-logo">
+                <img src="images/Group2.svg" alt>
+              </div>
+              <button class="navbar-toggler close-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+              </button>
+            </li>
+            <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
+              <a class="btn btn-info" href="profile.html"> Профиль</a>
+            </li>
+            <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
+              <a class="btn btn-info" href="service.html"> Услуги</a>
+            </li>
+            <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
+              <a class="btn btn-info" href="admin_panel.html"> Админка</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="banner">
+    <div class="container">
+      <h1 class="font-weight-semibold">AccentOS® - новая российская облачная
+        платформа.</h1>
+      <h6 class="font-weight-normal text-muted pb-3">ООО “Тионикс Холдинг”
+        предлагает корпоративным клиентам совершенно новую платформу
+        масштабируемого и гибкого облачного IaaS-решения AccentOS® на базе
+        решений с открытым кодом. AccentOS® предоставляет сервисы для
+        развертывания и поддержки частных и гибридных облаков на базе
+        OpenStack, управления виртуализацией рабочих мест, мониторинга,
+        резервного копирования и другие.</h6>
+      <img src="images/Group171.svg" alt class="img-fluid">
+    </div>
+  </div>
+
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <h2>Наши услуги</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-desktop"></i>
+            </div>
+            <div class="feature-content">
+              <h5>AccentOS</h5>
+              <p>Облачная платформа AccentOS® спроектирована и разработана в соответствии с принципами построения корпоративных систем (открытые стандарты и технологии,простота)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="feature-content">
+              <h5>AccentOS RemoteApp</h5>
+              <p>Программное обеспечение AccentOS RemoteApp служит для публикации и администрирования удалённых приложений с серверов под управлением облачных платформ..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-comment"></i>
+            </div>
+            <div class="feature-content">
+              <h5>StorageSpace</h5>
+              <p>Программа для управления унифицированными системами хранения для платформ управления виртуализацией с поддержкой Cinder «Storage Space».</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-image"></i>
+            </div>
+            <div class="feature-content">
+              <h5>AppLevel</h5>
+              <p>Программа реализует алгоритм создания готовых (золотых) образов виртуальных машин из загрузочного образа.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-th"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Установка модулей AccentOS®</h5>
+              <p>Для ознакомления с функциональными возможностями модулей AccentOS® их можно установить самостоятельно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="vendors/aos/js/aos.js"></script>
+  <script src="js/landingpage.js"></script>
+</body>
+
+</html>

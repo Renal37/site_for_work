@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль</title>
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <style>
+    body {
+        background-color: #f8f9fa;
+        color: #495057;
+    }
+    .main-body {
+        padding: 15px;
+    }
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .breadcrumb-item a {
+        color: black;
+        text-decoration: none;
+    }
+    .breadcrumb-item.active {
+        color: #1998ff;
+    }
+    .btn-info {
+        background-color: #1998ff;
+        border-color: #1998ff;
+    }
+    .btn-info:hover {
+        border: 1px solid #1998ff; 
+    }
+    @media (max-width:770px) {
+      .cardsq{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-body">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Профиль</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="https://yt3.googleusercontent.com/ytc/APkrFKYz4XMrl453lTcm-zR05B9aNWrxFHCbBePUYYDgRg=s900-c-k-c0x00ffffff-no-rj" alt="Avatar" class="profile-img">
+                        <div class="mt-3">
+                            <h4 class="mb-1">Мустафин Реналь</h4>
+                            <p class="text-muted">Full Stack Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3 cardsq">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h6><i class="fab fa-github mr-2"></i> Github</h6>
+                            <span class="text-muted">renal17</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">ФИО</h6>
+                            </div>
+                            <div class="col-sm-9 text-muted">
+                                Мустафин Реналь Ранисович
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Почта</h6>
+                            </div>
+                            <div class="col-sm-9 text-muted">
+                                renal@gmail.com
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Номер телефона</h6>
+                            </div>
+                            <div class="col-sm-9 text-muted">
+                                +7 (145) 565-32-32
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a class="btn btn-info" target="__blank" href="#">Изменить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
