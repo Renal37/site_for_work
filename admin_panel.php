@@ -151,7 +151,7 @@
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
       <div class="container">
         <div class="navbar-brand-wrapper d-flex w-100">
-          <h1><a href="index.html" style="text-decoration: none; color: black;">ACCENTOS</a></h1>
+          <h1><a href="index.php" style="text-decoration: none; color: black;">ACCENTOS</a></h1>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -171,13 +171,13 @@
               </button>
             </li>
             <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
-              <a class="btn btn-info" href="profile.html"> Профиль</a>
+              <a class="btn btn-info" href="profile.php"> Профиль</a>
             </li>
             <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
-              <a class="btn btn-info" href="service.html"> Услуги</a>
+              <a class="btn btn-info" href="service.php"> Услуги</a>
             </li>
             <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
-              <a class="btn btn-info" href="admin_panel.html"> Админка</a>
+              <a class="btn btn-info" href="admin_panel.php"> Админка</a>
             </li>
 
           </ul>

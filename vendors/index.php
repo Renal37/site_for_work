@@ -29,17 +29,18 @@
       width: 100%;
 
     }
-    @media(min-width:1000px){
+
+    @media(min-width:1000px) {
       .btn-contact-uss {
-      margin-left: 50px;
+        margin-left: 50px;
+      }
     }
-    }
-    @media(max-width:1000px){
+
+    @media(max-width:1000px) {
       .btn-contact-uss {
-      margin-left: 0px;
+        margin-left: 0px;
+      }
     }
-    }
- 
   </style>
 </head>
 
@@ -49,9 +50,7 @@
       <div class="container">
         <div class="navbar-brand-wrapper d-flex w-100">
           <h1>ACCENTOS</h1>
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="mdi mdi-menu navbar-toggler-icon"></span>
           </button>
         </div>
@@ -61,9 +60,7 @@
               <div class="navbar-collapse-logo">
                 <img src="images/Group2.svg" alt>
               </div>
-              <button class="navbar-toggler close-button" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+              <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
               </button>
             </li>
@@ -79,15 +76,34 @@
             <li class="nav-item">
               <a class="nav-link" href="#kol-marketing-section">Коллектив</a>
             </li>
+            <?php
+            if (!empty($_SESSION['user_id'])) {
+            ?>
+              <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
+                <a class="btn btn-info" href="profile.php"> Профиль</a>
+              </li>
+            <?php
+            } else {
+            ?>
+              <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
+                <a class="btn btn-info" href="profile.php"> Регистрация</a>
+              </li>
+            <?php
+            }
+            ?>
             <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
-              <a class="btn btn-info" href="profile.html"> Профиль</a>
+              <a class="btn btn-info" href="service.php"> Услуги</a>
             </li>
-            <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
-              <a class="btn btn-info" href="service.html"> Услуги</a>
-            </li>
-            <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
-              <a class="btn btn-info" href="admin_panel.html"> Админка</a>
-            </li>
+            <?php
+            if ($_SESSION['role'] == 2) {
+            ?>
+              <li class="nav-item btn-contact-uss pl-4 pl-lg-0">
+
+                <a class="btn btn-info" href="admin_panel.php"> Админка</a>
+              </li>
+            <?php
+            }
+            ?>
 
           </ul>
         </div>
